@@ -4,11 +4,14 @@ public class UserInput{
 	public static void main (String[] args){
 		Scanner scan = new Scanner (System.in);
 		
+		System.out.printIn("-------------------------Input from User---------------------");
 		System.out.print("Enter your name: ");
 		String name = scan.nextLine();
 		
 		System.out.print("Enter your gender: ");
-		String gender = scan.next();
+		//char gender = scan.next().charAt(3);
+		String gender = scan.nextLine;
+		
 		scan.nextLine();
 		
 		System.out.print("Enter your address: ");
@@ -19,13 +22,16 @@ public class UserInput{
 		
 		System.out.print(name + " are you learning Java?(true/false): ");
 		boolean answer = scan.nextBoolean();
+		System.out.printIn("-------------------------Input from User---------------------\n");
 		
 		
 		System.out.printf("welcome %s to NIIT",name);
 		System.out.printf("You are a %s and you are living in %s ",gender,address);
 		System.out.printf("You are %d years old. Nice meeting you%n",age);
 		System.out.printf("Wow you said %b. it means that you are a professional Java Programmer%n",answer);
-	
+		//System.out.printIn("-------------------------------------------------------------------------");
+		
+		//System.out.printIn("Character at index 3 is" + gender);
 		
 		
 	}
